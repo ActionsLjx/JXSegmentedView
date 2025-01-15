@@ -52,7 +52,7 @@ open class JXSegmentedTitleCell: JXSegmentedBaseCell {
 
         titleLabel.numberOfLines = myItemModel.titleNumberOfLines
         maskTitleLabel.numberOfLines = myItemModel.titleNumberOfLines
-
+        self.layer.cornerRadius = myItemModel.bgCornerRadius
         if myItemModel.isTitleZoomEnabled {
             //先把font设置为缩放的最大值，再缩小到最小值，最后根据当前的titleCurrentZoomScale值，进行缩放更新。这样就能避免transform从小到大时字体模糊
             let maxScaleFont = UIFont(descriptor: myItemModel.titleNormalFont.fontDescriptor, size: myItemModel.titleNormalFont.pointSize*CGFloat(myItemModel.titleSelectedZoomScale))
@@ -78,7 +78,6 @@ open class JXSegmentedTitleCell: JXSegmentedBaseCell {
                 titleLabel.font = myItemModel.titleNormalFont
                 maskTitleLabel.font = myItemModel.titleNormalFont
                 self.backgroundColor = myItemModel.bgNormalColor
-                self.layer.cornerRadius = myItemModel.bgCornerRadius
             }
         }
 

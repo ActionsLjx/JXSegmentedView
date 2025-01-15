@@ -78,6 +78,7 @@ open class JXSegmentedTitleCell: JXSegmentedBaseCell {
                 titleLabel.font = myItemModel.titleNormalFont
                 maskTitleLabel.font = myItemModel.titleNormalFont
                 self.backgroundColor = myItemModel.bgNormalColor
+                self.layer.cornerRadius = myItemModel.bgCornerRadius
             }
         }
 

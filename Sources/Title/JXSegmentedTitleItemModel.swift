@@ -16,6 +16,7 @@ open class JXSegmentedTitleItemModel: JXSegmentedBaseItemModel {
     open var titleSelectedColor: UIColor = .red
     open var bgSelectedColor: UIColor = .clear
     open var bgNormalColor: UIColor = .clear
+    open var bgCornerRadius: CGFloat = 0
     open var titleNormalFont: UIFont = UIFont.systemFont(ofSize: 15)
     open var titleSelectedFont: UIFont = UIFont.systemFont(ofSize: 15)
     open var isTitleZoomEnabled: Bool = false

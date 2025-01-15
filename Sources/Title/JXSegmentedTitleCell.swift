@@ -73,9 +73,11 @@ open class JXSegmentedTitleCell: JXSegmentedBaseCell {
             if myItemModel.isSelected {
                 titleLabel.font = myItemModel.titleSelectedFont
                 maskTitleLabel.font = myItemModel.titleSelectedFont
+                self.backgroundColor = myItemModel.bgSelectedColor
             }else {
                 titleLabel.font = myItemModel.titleNormalFont
                 maskTitleLabel.font = myItemModel.titleNormalFont
+                self.backgroundColor = myItemModel.bgNormalColor
             }
         }
 
